@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import SMBar from '../Widgets/SMBar';
+
 class Footer extends Component {
   render() {
     return (
-      <footer>
-        <div>
-          Footer component
-        </div>
-      </footer>
+      <footerSection>
+        <SMBar/>
+      </footerSection>
     )
   }
 }
+
 export default Footer;
