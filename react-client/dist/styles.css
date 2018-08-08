@@ -70,17 +70,6 @@ belowLanding {
   height: 620px;
   background-color: var(--blue_primary);
 }
-.sectionTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 70px 70px;
-  font-size: 32px;
-  color: var(--dark_grey_gackground);
-  font-family: Ubuntu;
-  font-style: bold;
-}
 .foodExamples{
   display: flex;
   margin: 100px;
@@ -89,6 +78,7 @@ belowLanding {
   width: 70%;
 }
 #example{
+  display: flex;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 4px;
@@ -107,30 +97,38 @@ exampleOne {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/********************* Analysis *********************/
-
-bodyContainer {
+/********************* Recipe *********************/
+recipeMainContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 2000px;
   background-color: var(--dark_grey_gackground);
 }
-firstsection {
+recipeFeaturedContainer {
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: 100px;
   background-color: var(--dark_grey_gackground);
 }
-secondSection{
-  padding: 50px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+recipeBodyContainer{
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 30px 30px;
   width: 100%;
-  height: 600px;
   background-color: var(--blue_primary);
   color: black;
+}
+
+.recipeImage{
+  width: 100%;
+  height: 70%;
+  background-color: grey;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.boxShadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /********************* Text *********************/
@@ -155,22 +153,48 @@ subTitle{
   color: white;
   font-family: Karla;
 }
-introText {
-  display: inline-block;
-  margin: 50px 50px;
-  width: 30%;
-  text-align: justify;
-  font-size: 24px;
+intro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: teal;
+  height:inherit;
+  width: 45%;
+}
+.introTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 70px 70px;
+  font-size: 28px;
+  color: var(--dark_grey_gackground);
+  width: 70%;
+  font-family: Ubuntu;
+  font-style: bold;
+}
+.introSubtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 70px;
+  font-size: 20px;
   color: white;
-  font-family: Cormorant, serif;
+  font-family: Karla;
+  font-style: bold;
 }
 
 /********************* Widgets *********************/
-.stockGraph{
+.recipeCard{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  margin: 40px 40px;
+  border-radius: 5%;
+  width: 25%;
+  height: 500px;
+  background-color: var(--dark_grey_gackground);
 }
 
 /********************* Footer *********************/
@@ -190,6 +214,8 @@ footerSection {
   align-items: center;
   width: 20%;
 }
+
+/********************* Global constants *********************/
 :root {
   --blue_primary: #3895bc;
   --dark_grey_gackground: #242628;

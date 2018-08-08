@@ -1,16 +1,40 @@
 import React, { Component } from 'react';
+import RecipeCard from "../Widgets/RecipeCard"
 
 class RecipesPage extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+      message: 'Hello'
+    };
+  }
+
+  componentDidMount(){
+
+  }
+
+
+
   render() {
     return (
-      <bodyContainer>
-        <firstsection>
+      <recipeMainContainer>
+        <recipeFeaturedContainer>
           <mainTitle>Recipes</mainTitle>
-        </firstsection>
-        <secondsection>
-        </secondsection>
-      </bodyContainer>
+        </recipeFeaturedContainer>
+        <recipeBodyContainer>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+          <RecipeCard/>
+        </recipeBodyContainer>
+      </recipeMainContainer>
 
     )
   }

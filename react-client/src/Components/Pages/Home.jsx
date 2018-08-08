@@ -11,9 +11,12 @@ class HomePage extends Component {
           <subTitle> {HOME_TEXT.SUBTITLE} </subTitle>
         </landing>
         <belowLanding>
-          <div class="sectionTitle"></div>
+          <intro>
+            <div className="introTitle">{HOME_TEXT.SECTION_TITLE}</div>
+            <div className="introSubtext">{HOME_TEXT.SECTION_CONTENT}</div>
+          </intro>
           <div class="foodExamples">
-            <img src="./assets/example1.png" id="example" alt="Bowl of Food" height="300" width="300"/>
+            <img src="./assets/pasta.jpg" id="example" alt="Bowl of Food" height="400" width="600"/>
           </div>
         </belowLanding>
       </homeContainer>
