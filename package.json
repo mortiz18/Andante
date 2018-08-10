@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "andante": "^0.1.0",
+    "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
@@ -43,5 +44,5 @@
   },
   "author": "Michael Ortiz",
   "license": "ISC",
-  "proxy": "mongodb://localhost:27017/db_example2"
+  "proxy": "https//:localhost:5000"
 }

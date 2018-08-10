@@ -3,20 +3,21 @@ import React, { Component } from 'react';
 
 class RecipeCard extends Component {
 
+
   render() {
     return (
-      <div class="recipeCard boxShadow">
-        <div class="recipeImage"></div>
-        
+      <div className="recipeCard boxShadow">
+        <div className="recipeImage"></div>
+        <div className="recipeTitle">{this.props.details.name}</div>
+        <div id="bottomBorder"></div>
       </div>
     )
   }
 }
 
 const styles = {
-  Icon: {
-    borderRadius: 100,
-    backgroundColor: 'white',
+  Title: {
+
   },
 };
 

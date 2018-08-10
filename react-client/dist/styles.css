@@ -40,14 +40,14 @@ h1{
 }
 
 /********************* Home *********************/
-homeContainer {
+.homeContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 1600px;
   background-color: var(--dark_grey_gackground);
 }
-landing {
+.landing {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +62,7 @@ landing {
   background-color: var(--dark_grey_gackground);
 
 }
-belowLanding {
+.belowLanding {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -72,10 +72,11 @@ belowLanding {
 }
 .foodExamples{
   display: flex;
-  margin: 100px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
+  height: inherit;
+  z-index: auto;
 }
 #example{
   display: flex;
@@ -84,7 +85,7 @@ belowLanding {
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-exampleOne {
+.exampleOne {
   display: inline-block;
   width: 300px;
   height: 300px;
@@ -98,25 +99,29 @@ exampleOne {
 }
 
 /********************* Recipe *********************/
-recipeMainContainer {
+.recipeMainContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--dark_grey_gackground);
+  background-color: var(--blue_primary);
 }
-recipeFeaturedContainer {
+.recipeFeaturedContainer {
   align-items: center;
   width: 100%;
-  height: 100px;
-  background-color: var(--dark_grey_gackground);
+  height: 400px;
+  background-size: cover;
+  background-image: url("./assets/ingrediants.jpg");
+  background-repeat: no-repeat;
 }
-recipeBodyContainer{
+.recipeBodyContainer{
   display: inline-flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 30px 30px;
+  padding: 30px 70px;
   width: 100%;
   background-color: var(--blue_primary);
   color: black;
+  object-fit: contain;
 }
 
 .recipeImage{
@@ -125,6 +130,7 @@ recipeBodyContainer{
   background-color: grey;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
+  object-fit: contain;
 }
 
 .boxShadow{
@@ -132,7 +138,7 @@ recipeBodyContainer{
 }
 
 /********************* Text *********************/
-mainTitle{
+.mainTitle{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -143,7 +149,7 @@ mainTitle{
   font-family: Ubuntu;
   font-style: bold;
 }
-subTitle{
+.subTitle{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -153,14 +159,14 @@ subTitle{
   color: white;
   font-family: Karla;
 }
-intro{
+.intro{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   background-color: teal;
   height:inherit;
-  width: 45%;
+  z-index: 2;
 }
 .introTitle {
   display: flex;
@@ -185,6 +191,12 @@ intro{
   font-family: Karla;
   font-style: bold;
 }
+.recipeTitle{
+  font-size: 24px;
+  font-family: Karla;
+  font-style: bold;
+  align-self: center;
+}
 
 /********************* Widgets *********************/
 .recipeCard{
@@ -193,8 +205,8 @@ intro{
   margin: 40px 40px;
   border-radius: 5%;
   width: 25%;
-  height: 500px;
-  background-color: var(--dark_grey_gackground);
+  height: 420px;
+  background-color: white;
 }
 
 /********************* Footer *********************/
@@ -213,6 +225,13 @@ footerSection {
   justify-content: space-around;
   align-items: center;
   width: 20%;
+}
+
+/********************* Other *********************/
+#bottomBorder{
+  align-self: center;
+  border-bottom: 2px solid grey;
+  width: 70%;
 }
 
 /********************* Global constants *********************/

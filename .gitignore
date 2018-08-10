@@ -8,3 +8,8 @@ bundle.js
 node_modules/
 # Other
 .DS_Store
+react-client/.DS_Store
+react-client/.DS_Store
+react-client/dist/.DS_Store
+react-client/dist/assets/.DS_Store
+react-client/src/Components/Pages/.DS_Store
