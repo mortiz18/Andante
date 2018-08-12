@@ -15,7 +15,7 @@ class HomePage extends Component {
             <div className="introTitle">{HOME_TEXT.SECTION_TITLE}</div>
             <div className="introSubtext">{HOME_TEXT.SECTION_CONTENT}</div>
           </div>
-          <div class="foodExamples">
+          <div className="foodExamples">
             <img src="./assets/pasta.jpg" id="example" alt="Bowl of Food" height="400" width="600"/>
           </div>
         </div>

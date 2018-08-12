@@ -6,6 +6,10 @@ class Header extends Component {
     return (
       <div class='header'>
         <NavBar/>
+        <div className="loginBtns">
+          <button className="button" id="logIn">Log In </button>
+          <button className="button" id="signUp">Join Us</button>
+        </div>
       </div>
     )
   }

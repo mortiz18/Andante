@@ -21,9 +21,12 @@
     "mongoose": "^5.2.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-social-media-bar": "0.0.4",
     "react-tradingview-widget": "^1.2.5",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.82.1",
     "webpack": "^4.16.5"
   },

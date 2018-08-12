@@ -4,7 +4,7 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <ul class="headerButtons">
+        <ul class="routeButtons">
           <li className="navButton"><Link to="">Home</Link></li>
           <li className="navButton"><Link to="recipes">Recipes</Link></li>
           <li className="navButton"><Link to="blog">Blog</Link></li>
